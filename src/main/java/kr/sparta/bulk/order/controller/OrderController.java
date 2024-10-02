@@ -25,6 +25,8 @@ public class OrderController {
 
     @PutMapping("/sample/bulk-edit")
     public int updateAllOrders() {
-        return orderService.editOrders(/* 수정 대상은 사실상 외부에서 넘어와야 함 */);
+        return orderService.editOrders(
+                /* 수정 대상은 사실상 외부에서 넘어와야 함 */
+        );
     }
 }
